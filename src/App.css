@@ -1,5 +1,4 @@
 @media screen and (max-width: 600px) {
-
   body {
     background-color: #d04379;
     background-image: none;
@@ -43,7 +42,7 @@
     left: 85px;
     transform: translate(-50%, -50%);
   }
-  
+
   .bottom-right {
     position: relative;
     bottom: 10px;
@@ -60,7 +59,7 @@
     transition: box-shadow 0.3s;
   }
 
-  .banner{
+  .banner {
     height: 200px;
     background-color: #d04379;
     background-attachment: scroll;
@@ -72,4 +71,3 @@
     display: none;
   }
 }
-  
