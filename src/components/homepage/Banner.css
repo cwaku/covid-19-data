@@ -1,0 +1,18 @@
+.banner {
+  background-color: #fafafa;
+  padding: 0;
+  margin: 0;
+  height: 500px;
+  background-image: url(../../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  margin-bottom: 40px;
+}
+
+.cases {
+  font-size: 28px;
+}
+.no-margin {
+  margin: 10px;
+}

@@ -7,6 +7,7 @@ import Box from '@mui/material/Box';
 import './Country.css';
 import covidItem from '../../images/covidItem.jpg';
 
+
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchCountries } from '../../redux/store/countries';
@@ -35,9 +36,10 @@ const Countries = () => {
 
   return (
     <Box sx={{ width: '100%' }}>
+      <h2>STATS BY COUNTRY:</h2>
     <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
       {countries &&  countries.map((item) => (
-        <Grid item xs={6} className="grid">
+        <Grid onClick={()=>{console.log("Heeeeey")}} item xs={6} className="grid">
           <img className="grid-img"
         src={covidItem}
         srcSet={covidItem}
