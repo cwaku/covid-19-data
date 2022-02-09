@@ -2,11 +2,12 @@ import Container from '@mui/material/Container';
 import Countries from './Country';
 import './Homepage.css';
 import Banner from './Banner';
+import Navbar from '../navbar/Navbar';
 
 const Homepage = () => {
   return (
     <Container className="main-container">
-      <h1>Homepage</h1>
+      <Navbar />
       <Banner />
       <Countries />
     </Container>

@@ -1,0 +1,12 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #d04379;
+  width: 100%;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: space-around;
+}

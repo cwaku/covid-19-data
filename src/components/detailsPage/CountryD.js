@@ -7,6 +7,7 @@ import Box from '@mui/material/Box';
 
 import './CountryD.css';
 import plainBGpreview from '../../images/plainBGpreview.png';
+import Navbar from '../navbar/Navbar';
 
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
@@ -18,15 +19,13 @@ const CountryD = () => {
   
   useEffect(() => {
     dispatch(fetchCountries());
-    
   }, [dispatch]);
   const countries = useSelector(state => state.countries.countries.singleCountry);
   const country = useSelector(state => state.countries.selectedCountry);
 
-
   return (
     <Box sx={{ width: '100%' }}>
-      <h2>STATS BY COUNTRY:</h2>
+          <Navbar />
     <Grid className="dContainer" container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
       {countries && countries.filter(item => item.name === country).map((item) => (
         <Grid key={item.id} item xs={6} className="grid">
@@ -37,16 +36,18 @@ const CountryD = () => {
       loading="lazy"
     />
         <div className="grid-texts">
-        <div className="grid-item bottom-left">{item.name}</div>
-        <div className="grid-item bottom-right"><span className='item-text'>Confirmed:</span>{item.confirmedCases}</div>
-        <div className="grid-item bottom-right"><span className='item-text'>Deaths:</span>{item.deaths}</div>
-        <div className="grid-item bottom-right"><span className='item-text'>Recovered:</span>{item.recovered}</div>
-        <div className="grid-item bottom-right"><span className='item-text'>Active:</span>{item.active}</div>
+          <div className="grid-item bottom-left">{item.name}</div>
+        <div>
+          <div className="grid-item bottom-right"><span className='item-text'>Confirmed:</span>{item.confirmedCases}</div>
+          <div className="grid-item bottom-right"><span className='item-text'>Deaths:</span>{item.deaths}</div>
+          <div className="grid-item bottom-right"><span className='item-text'>Recovered:</span>{item.recovered}</div>
+          <div className="grid-item bottom-right"><span className='item-text'>Active:</span>{item.active}</div>
+          </div>
         </div>
       </Grid>
       ))}
     </Grid>
-    <div className="Redions breakdown">
+    <div className="Regions-breakdown">
       <h2>CITY BREAKDOWN:</h2>
       <div className="No-data">
       <h2>No regions data for this country</h2>
@@ -56,4 +57,4 @@ const CountryD = () => {
     );
 };
 
-export default CountryD ;
+export default CountryD;
