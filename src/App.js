@@ -1,11 +1,15 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Homepage from './components/homepage/Homepage';
-import './App.css';
+import CountryD from './components/detailsPage/CountryD';
 
 function App() {
   return (
-    <div className="App">
-      <Homepage />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/country" element={<CountryD />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -7,11 +7,12 @@ import Box from '@mui/material/Box';
 import './Country.css';
 import covidItem from '../../images/covidItem.jpg';
 
-
+import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchCountries } from '../../redux/store/countries';
 import { useSelector } from 'react-redux';
+import { getSelectedCountrySuccess } from '../../redux/store/countries';
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -22,6 +23,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const Countries = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   
   useEffect(() => {
     console.log('state before', countries);
@@ -33,13 +35,19 @@ const Countries = () => {
   console.log('state after outside', countries);
   console.log('state before outside', countries);
 
+  function selectedCountryName (country) {
+    console.log('country', country);
+    dispatch(getSelectedCountrySuccess(country));
+    navigate('/country');
+  }
+
 
   return (
     <Box sx={{ width: '100%' }}>
       <h2>STATS BY COUNTRY:</h2>
     <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
       {countries &&  countries.map((item) => (
-        <Grid onClick={()=>{console.log("Heeeeey")}} item xs={6} className="grid">
+        <Grid key={item.id} onClick={()=>{selectedCountryName(item.name)}} item xs={6} className="grid">
           <img className="grid-img"
         src={covidItem}
         srcSet={covidItem}

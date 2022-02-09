@@ -10,9 +10,11 @@ const countriesSlice = createSlice({
   name: "countries",
   initialState: {
     countries: [],
+    selectedCountry: '',
   },
   reducers: {
     getCountriesSuccess: (state, action) => ({...state, countries: action.payload}),
+    getSelectedCountrySuccess: (state, action) => ({...state, selectedCountry: action.payload}),
     getCountriesFailure: (state, action) => ({...state, countries: action.payload}),
   },
 });
@@ -21,7 +23,7 @@ export default countriesSlice.reducer;
 
 // Actions
 
-const { getCountriesSuccess, getCountriesFailure } = countriesSlice.actions;
+export const { getCountriesSuccess, getSelectedCountrySuccess, getCountriesFailure } = countriesSlice.actions;
 
 export const fetchCountries = () => async (dispatch) => {
   try {
