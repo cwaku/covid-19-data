@@ -30,7 +30,7 @@ const Countries = () => {
 
   return (
     <Box sx={{ width: '100%' }}>
-      <h2>STATS BY COUNTRY:</h2>
+      <h2 className="stats">STATS BY COUNTRY:</h2>
     <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
       {countries &&  countries.map((item) => (
         <Grid key={item.id} onClick={()=>{selectedCountryName(item.name)}} item xs={6} className="grid">

@@ -9,11 +9,18 @@
   background-attachment: fixed;
   margin-bottom: 40px;
   color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .cases {
   font-size: 28px;
 }
-.no-margin {
-  margin: 10px;
+
+
+h1,
+h2 {
+  margin: 0;
 }
