@@ -3,6 +3,7 @@ import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
+import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOutlined';
 
 import './Country.css';
 import plainBGpreview from '../../images/plainBGpreview.png';
@@ -48,14 +49,17 @@ const Countries = () => {
     <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
       {countries &&  countries.map((item) => (
         <Grid key={item.id} onClick={()=>{selectedCountryName(item.name)}} item xs={6} className="grid">
+          <ArrowCircleRightOutlinedIcon fontSize="large" className="grid-icon" />
           <img className="grid-img"
         src={plainBGpreview}
         srcSet={plainBGpreview}
         alt={item.title}
         loading="lazy"
       />
-          <div className="grid-item bottom-left"><span className='item-text'>Country:</span>{item.name}</div>
+          <div className="grid-texts">
+          <div className="grid-item bottom-left">{item.name}</div>
           <div className="grid-item bottom-right"><span className='item-text'>Confirmed:</span>{item.confirmedCases}</div>
+          </div>
         </Grid>
       ))}
     </Grid>
