@@ -5,7 +5,7 @@ import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 
 import './Country.css';
-import covidItem from '../../images/covidItem.jpg';
+import plainBGpreview from '../../images/plainBGpreview.png';
 
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
@@ -49,13 +49,13 @@ const Countries = () => {
       {countries &&  countries.map((item) => (
         <Grid key={item.id} onClick={()=>{selectedCountryName(item.name)}} item xs={6} className="grid">
           <img className="grid-img"
-        src={covidItem}
-        srcSet={covidItem}
+        src={plainBGpreview}
+        srcSet={plainBGpreview}
         alt={item.title}
         loading="lazy"
       />
-          <Item className="grid-item"><span className='item-text'>Country:</span>{item.name}</Item>
-          <Item className="grid-item"><span className='item-text'>Confirmed:</span>{item.confirmedCases}</Item>
+          <div className="grid-item bottom-left"><span className='item-text'>Country:</span>{item.name}</div>
+          <div className="grid-item bottom-right"><span className='item-text'>Confirmed:</span>{item.confirmedCases}</div>
         </Grid>
       ))}
     </Grid>

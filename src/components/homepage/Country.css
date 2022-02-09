@@ -1,11 +1,26 @@
 .grid {
+  position: relative;
   margin: 20px;
   padding: 20px;
   border-radius: 5px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 10px;
+  left: 120px;
+  transform: translate(-50%, -50%);
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
 }
 
 .grid:hover {
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  transform: scale(1.1);
 }
 
 .grid-img {
@@ -14,14 +29,12 @@
 }
 
 .grid-item {
-  display: flex;
   justify-content: space-around;
-  align-items: center;
-  align-content: center;
   border: none;
   border-radius: 5px;
   transition: box-shadow 0.3s;
-  font-size: 1.5rem !important;
+  font-size: 1.5rem;
+  padding: 20px;
 }
 
 .item-text {

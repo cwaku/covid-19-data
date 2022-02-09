@@ -1,0 +1,33 @@
+@media screen and (max-width: 600px) {
+
+  body {
+    background-image: url(./images/bgPurple.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+  }
+
+  .main-container {
+    /* background-color: #3a246d; */
+    padding: 0 !important;
+  }
+
+  .grid {
+    background-color: #3a246d;
+  }
+
+  .banner{
+    height: 200px;
+    background-color: rebeccapurple;
+    background-attachment: scroll;
+    background-size: cover;
+    padding-bottom: 20px;
+  }
+
+  .banner-text {
+    display: none;
+  }
+}
+  

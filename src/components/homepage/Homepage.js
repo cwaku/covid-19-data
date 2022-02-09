@@ -5,7 +5,7 @@ import Banner from './Banner';
 
 const Homepage = () => {
   return (
-    <Container>
+    <Container className="main-container">
       <h1>Homepage</h1>
       <Banner />
       <Countries />
