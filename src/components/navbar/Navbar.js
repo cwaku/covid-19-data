@@ -16,12 +16,12 @@ const Navbar = () => {
       <div className="navbar-container">
         <div className="navbar-logo">
           <ArrowBackIosOutlinedIcon onClick={() => goBack()} className="navbar-icon" />
-          </div>
-          <h3>Global cases</h3>
-          <div className="navbar-menu">
-            <MicOutlinedIcon className="" />
-            <SettingsOutlinedIcon className="" />
-            </div>
+        </div>
+        <h3>Global cases</h3>
+        <div className="navbar-menu">
+          <MicOutlinedIcon className="" />
+          <SettingsOutlinedIcon className="" />
+        </div>
       </div>
     </nav>
   );

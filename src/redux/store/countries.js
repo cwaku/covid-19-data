@@ -1,21 +1,21 @@
 import moment from 'moment';
-import { createSlice } from "@reduxjs/toolkit";
-import axios from "axios";
+import { createSlice } from '@reduxjs/toolkit';
+import axios from 'axios';
 // set axios default url
-axios.defaults.baseURL = "https://api.covid19tracking.narrativa.com/api/";
+axios.defaults.baseURL = 'https://api.covid19tracking.narrativa.com/api/';
 
-const date = moment(new Date()).format("YYYY-MM-DD");
+const date = moment(new Date()).format('YYYY-MM-DD');
 
 const countriesSlice = createSlice({
-  name: "countries",
+  name: 'countries',
   initialState: {
     countries: [],
     selectedCountry: '',
   },
   reducers: {
-    getCountriesSuccess: (state, action) => ({...state, countries: action.payload}),
-    getSelectedCountrySuccess: (state, action) => ({...state, selectedCountry: action.payload}),
-    getCountriesFailure: (state, action) => ({...state, countries: action.payload}),
+    getCountriesSuccess: (state, action) => ({ ...state, countries: action.payload }),
+    getSelectedCountrySuccess: (state, action) => ({ ...state, selectedCountry: action.payload }),
+    getCountriesFailure: (state, action) => ({ ...state, countries: action.payload }),
   },
 });
 
@@ -23,21 +23,20 @@ export default countriesSlice.reducer;
 
 // Actions
 
-export const { getCountriesSuccess, getSelectedCountrySuccess, getCountriesFailure } = countriesSlice.actions;
+export const {
+  getCountriesSuccess,
+  getSelectedCountrySuccess,
+  getCountriesFailure,
+} = countriesSlice.actions;
 
 export const fetchCountries = () => async (dispatch) => {
   try {
-    console.log("fetching countries", date);
     const response = await axios.get(date);
-    if(response) {
-      console.log("response", response.data);
+    if (response) {
       const { dates, total } = response.data;
-      console.log("dates", dates);
-      const countries = dates[date].countries;
-      console.log("countries", countries);
+      const { countries } = dates[date];
       const countriesList = Object.values(countries);
-      console.log("countriesList as Object", countriesList);
-      
+
       const singleCountry = countriesList.map((country) => (
         {
           name: country.name,

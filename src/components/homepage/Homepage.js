@@ -4,14 +4,12 @@ import './Homepage.css';
 import Banner from './Banner';
 import Navbar from '../navbar/Navbar';
 
-const Homepage = () => {
-  return (
-    <Container className="main-container">
-      <Navbar />
-      <Banner />
-      <Countries />
-    </Container>
-  );
-};
+const Homepage = () => (
+  <Container className="main-container">
+    <Navbar />
+    <Banner />
+    <Countries />
+  </Container>
+);
 
 export default Homepage;
