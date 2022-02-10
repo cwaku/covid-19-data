@@ -19,7 +19,6 @@ const Countries = () => {
     dispatch(fetchCountries());
   }, [dispatch]);
   const countries = useSelector((state) => state.countries.countries.singleCountry);
-  const country = useSelector((state) => state.countries.selectedCountry);
   const searched = useSelector((state) => state.countries.searchCountry);
 
   function selectedCountryName(country) {
