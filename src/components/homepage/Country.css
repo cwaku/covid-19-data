@@ -7,7 +7,14 @@
 }
 
 .stats {
-  margin: 20px;
+  margin: 20px 20px 0 20px;
+}
+
+.search-input {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 30px;
 }
 
 .grid-icon {
@@ -26,7 +33,7 @@
 .bottom-right {
   position: absolute;
   bottom: 30px;
-  right: 40px;
+  right: 0 0 50px 0;
 }
 
 .grid:hover {

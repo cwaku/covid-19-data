@@ -19,15 +19,63 @@ const Countries = () => {
     dispatch(fetchCountries());
   }, [dispatch]);
   const countries = useSelector((state) => state.countries.countries.singleCountry);
+  const country = useSelector((state) => state.countries.selectedCountry);
 
   function selectedCountryName(country) {
     dispatch(getSelectedCountrySuccess(country));
     navigate('/country');
   }
 
+  const handleChange = (e) => {
+    dispatch(getSelectedCountrySuccess(e.target.value));
+  };
+
+  if (country !== '') {
+    return (
+      <Box sx={{ width: '100%' }}>
+        <h2 className="stats">STATS BY COUNTRY:</h2>
+        <input
+          className="search-input"
+          type="text"
+          placeholder="Search for a country"
+          onChange={handleChange}
+          value={country}
+        />
+        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+          {countries && countries.filter((item) => item.name === country).map((item) => (
+            <Grid key={item.id} onClick={() => { selectedCountryName(item.name); }} item xs={6} className="grid">
+              <ArrowCircleRightOutlinedIcon fontSize="large" className="grid-icon" />
+              <img
+                className="grid-img"
+                src={plainBGpreview}
+                srcSet={plainBGpreview}
+                alt={item.title}
+                loading="lazy"
+              />
+              <div className="grid-texts">
+                <div className="grid-item bottom-left">{item.name}</div>
+                <div className="grid-item bottom-right">
+                  <span className="item-text">Confirmed:</span>
+                  {item.confirmedCases}
+                </div>
+              </div>
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
+    );
+  }
+
   return (
     <Box sx={{ width: '100%' }}>
       <h2 className="stats">STATS BY COUNTRY:</h2>
+      <input
+        className="search-input"
+        type="text"
+        placeholder="Search for a country"
+        onChange={handleChange}
+        value={country}
+      />
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         {countries && countries.map((item) => (
           <Grid key={item.id} onClick={() => { selectedCountryName(item.name); }} item xs={6} className="grid">
