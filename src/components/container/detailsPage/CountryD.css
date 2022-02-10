@@ -37,3 +37,12 @@
 h2 {
   text-align: left;
 }
+
+@media screen and (max-width: 600px) {
+  .grid {
+    max-width: 80% !important;
+  }
+
+  
+}
+  
