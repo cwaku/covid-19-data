@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import plainBGpreview from '../../images/plainBGpreview.png';
-import { fetchCountries, getSelectedCountrySuccess } from '../../redux/store/countries';
+import { fetchCountries, getSelectedCountrySuccess, getSearchedCountrySuccess } from '../../redux/store/countries';
 
 const Countries = () => {
   const dispatch = useDispatch();
@@ -20,17 +20,20 @@ const Countries = () => {
   }, [dispatch]);
   const countries = useSelector((state) => state.countries.countries.singleCountry);
   const country = useSelector((state) => state.countries.selectedCountry);
+  const searched = useSelector((state) => state.countries.searchCountry);
 
   function selectedCountryName(country) {
     dispatch(getSelectedCountrySuccess(country));
     navigate('/country');
+    dispatch(getSearchedCountrySuccess(''));
   }
 
   const handleChange = (e) => {
     dispatch(getSelectedCountrySuccess(e.target.value));
+    dispatch(getSearchedCountrySuccess(e.target.value));
   };
 
-  if (country !== '') {
+  if (searched !== '') {
     return (
       <Box sx={{ width: '100%' }}>
         <h2 className="stats">STATS BY COUNTRY:</h2>
@@ -39,10 +42,10 @@ const Countries = () => {
           type="text"
           placeholder="Search for a country"
           onChange={handleChange}
-          value={country}
+          value={searched}
         />
         <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-          {countries && countries.filter((item) => item.name === country).map((item) => (
+          {countries && countries.filter((item) => item.name === searched).map((item) => (
             <Grid key={item.id} onClick={() => { selectedCountryName(item.name); }} item xs={6} className="grid">
               <ArrowCircleRightOutlinedIcon fontSize="large" className="grid-icon" />
               <img
@@ -74,7 +77,7 @@ const Countries = () => {
         type="text"
         placeholder="Search for a country"
         onChange={handleChange}
-        value={country}
+        value={searched}
       />
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         {countries && countries.map((item) => (

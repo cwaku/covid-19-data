@@ -1,9 +1,9 @@
 import ArrowBackIosOutlinedIcon from '@mui/icons-material/ArrowBackIosOutlined';
 import MicOutlinedIcon from '@mui/icons-material/MicOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
+import { useNavigate } from 'react-router-dom';
 
 import './Navbar.css';
-import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const navigate = useNavigate();

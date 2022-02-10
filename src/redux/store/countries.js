@@ -11,10 +11,12 @@ const countriesSlice = createSlice({
   initialState: {
     countries: [],
     selectedCountry: '',
+    searchCountry: '',
   },
   reducers: {
     getCountriesSuccess: (state, action) => ({ ...state, countries: action.payload }),
     getSelectedCountrySuccess: (state, action) => ({ ...state, selectedCountry: action.payload }),
+    getSearchedCountrySuccess: (state, action) => ({ ...state, searchCountry: action.payload }),
     getCountriesFailure: (state, action) => ({ ...state, countries: action.payload }),
   },
 });
@@ -26,6 +28,7 @@ export default countriesSlice.reducer;
 export const {
   getCountriesSuccess,
   getSelectedCountrySuccess,
+  getSearchedCountrySuccess,
   getCountriesFailure,
 } = countriesSlice.actions;
 
