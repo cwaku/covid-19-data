@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Countries component should render the Countries component correctly 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-8atqhb"
+  >
+    <h2
+      class="stats"
+    >
+      STATS BY COUNTRY:
+    </h2>
+    <div
+      class="MuiGrid-root MuiGrid-container css-10mzr36-MuiGrid-root"
+    />
+  </div>
+</div>
+`;
