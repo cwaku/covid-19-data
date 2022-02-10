@@ -24,7 +24,7 @@ const CountryD = () => {
       <Navbar />
       <Grid className="dContainer" container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         {countries && countries.filter((item) => item.name === country).map((item) => (
-          <Grid key={item.id} item xs={6} className="grid">
+          <Grid key={item.id} item xs={6} className="grid grid1">
             <img
               className="grid-img"
               src={plainBGpreview}
