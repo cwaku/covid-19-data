@@ -9,6 +9,11 @@
 ![screenshot](./screenshot.png)
 ![screenshot](./screenshot1.png)
 
+## Demo video
+Click on the badge below to see video demo
+
+[![](https://img.shields.io/badge/Demo-video-blueviolet)](https://www.loom.com/share/4bac498fb54b4276801e118ffea02851)
+
 
 ## Built With
 
@@ -20,7 +25,7 @@
 
 #### Click on the badge below to see the deployed version of the app:
 
-[![](https://img.shields.io/badge/Deployed-Heroku-blueviolet)]()
+[![](https://img.shields.io/badge/Deployed-Heroku-blueviolet)](https://ricky-covid-19-data.herokuapp.com/)
 
 ## Getting Started
 
