@@ -56,12 +56,6 @@ const CountryD = () => {
           </Grid>
         ))}
       </Grid>
-      <div className="Regions-breakdown">
-        <h2>CITY BREAKDOWN:</h2>
-        <div className="No-data">
-          <h2>No regions data for this country</h2>
-        </div>
-      </div>
     </Box>
   );
 };
