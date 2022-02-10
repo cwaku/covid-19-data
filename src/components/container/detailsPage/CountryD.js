@@ -5,10 +5,10 @@ import Box from '@mui/material/Box';
 import './CountryD.css';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import plainBGpreview from '../../images/plainBGpreview.png';
+import plainBGpreview from '../../../images/plainBGpreview.png';
 import Navbar from '../navbar/Navbar';
 
-import { fetchCountries } from '../../redux/store/countries';
+import { fetchCountries } from '../../../redux/store/countries';
 
 const CountryD = () => {
   const dispatch = useDispatch();
