@@ -10,7 +10,7 @@
 ## Demo video
 Click on the badge below to see video demo
 
-[![](https://img.shields.io/badge/Demo-video-blueviolet)](https://www.loom.com/share/4bac498fb54b4276801e118ffea02851)
+[![](https://img.shields.io/badge/Demo-video-blueviolet)](https://www.loom.com/share/2829b1d73b114ce09109dbc141df1c48)
 
 
 ## Built With
