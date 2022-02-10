@@ -5,9 +5,7 @@
 > Working with the real live data from the Narrativa API:. The Covid-19 Tracking Project collects information from different data sources to provide comprehensive data for the novel coronavirus, SARS-CoV-2.
 
 
-
-![screenshot](./screenshot.png)
-![screenshot](./screenshot1.png)
+![screenshot](src\screenshot3.png)
 
 ## Demo video
 Click on the badge below to see video demo
