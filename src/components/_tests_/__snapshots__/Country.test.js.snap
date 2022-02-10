@@ -10,6 +10,12 @@ exports[`Test Countries component should render the Countries component correctl
     >
       STATS BY COUNTRY:
     </h2>
+    <input
+      class="search-input"
+      placeholder="Search for a country"
+      type="text"
+      value=""
+    />
     <div
       class="MuiGrid-root MuiGrid-container css-10mzr36-MuiGrid-root"
     />
