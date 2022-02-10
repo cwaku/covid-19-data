@@ -33,7 +33,7 @@
 .bottom-right {
   position: absolute;
   bottom: 30px;
-  right: 0 0 50px 0;
+  right: 0;
 }
 
 .grid:hover {
