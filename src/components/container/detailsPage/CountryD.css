@@ -1,0 +1,45 @@
+.dContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.grid {
+  justify-content: center;
+  width: 100%;
+}
+
+.grid-item {
+  padding: 0;
+}
+
+.grid-img {
+  width: auto;
+  height: auto;
+}
+
+.grid-texts {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.bottom-right {
+  position: relative;
+  bottom: 0;
+  right: 0;
+}
+
+h2 {
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .grid1 {
+    max-width: 80% !important;
+  }
+}

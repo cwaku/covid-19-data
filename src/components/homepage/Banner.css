@@ -1,0 +1,25 @@
+.banner {
+  background-color: #fafafa;
+  padding: 0;
+  margin: 0;
+  height: 500px;
+  background-image: url(../../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  margin-bottom: 40px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cases {
+  font-size: 28px;
+}
+
+h1,
+h2 {
+  margin: 0;
+}

@@ -1,0 +1,66 @@
+.grid {
+  position: relative;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.stats {
+  margin: 20px 20px 0 20px;
+}
+
+.search-input {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 30px;
+}
+
+.grid-icon {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 120px;
+  transform: translate(-50%, -50%);
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+}
+
+.grid:hover {
+  transform: scale(1.1);
+}
+
+.grid-img {
+  width: 100%;
+  height: auto;
+}
+
+.grid-item {
+  justify-content: space-around;
+  border: none;
+  border-radius: 5px;
+  transition: box-shadow 0.3s;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.item-text {
+  padding: 10px;
+  width: 30px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: box-shadow 0.3s;
+}

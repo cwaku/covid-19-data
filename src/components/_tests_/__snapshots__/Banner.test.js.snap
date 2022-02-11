@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component should render the  banner correctly  1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="banner MuiBox-root css-8atqhb"
+      >
+        <h1>
+          COVID-19
+        </h1>
+        <h2>
+          Coronavirus disease (COVID-19)
+        </h2>
+        <h2
+          class="cases"
+        >
+          Total confirmed cases:
+        </h2>
+        <div
+          class="banner-text"
+        >
+          <h3
+            class="no-margin"
+          >
+            Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
+          </h3>
+          <h3
+            class="no-margin"
+          >
+            Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.
+          </h3>
+          <h3
+            class="no-margin"
+          >
+            The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow).
+          </h3>
+          <h3
+            class="no-margin"
+          >
+            At this time, there are no specific vaccines or treatments for COVID-19.
+          </h3>
+          <h3
+            class="no-margin"
+          >
+            However, there are many ongoing clinical trials evaluating potential treatments. WHO will continue to provide updated information as soon as clinical findings become available.
+          </h3>
+          <h3
+            class="no-margin"
+          >
+            The World Health Organization (WHO) is the authority on the COVID-19 pandemic.
+          </h3>
+          <h3
+            class="no-margin"
+          >
+            Read more about the COVID-19 pandemic at
+            <a
+              href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019"
+            >
+              https://www.who.int/emergencies/diseases/novel-coronavirus-2019
+            </a>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="banner MuiBox-root css-8atqhb"
+    >
+      <h1>
+        COVID-19
+      </h1>
+      <h2>
+        Coronavirus disease (COVID-19)
+      </h2>
+      <h2
+        class="cases"
+      >
+        Total confirmed cases:
+      </h2>
+      <div
+        class="banner-text"
+      >
+        <h3
+          class="no-margin"
+        >
+          Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
+        </h3>
+        <h3
+          class="no-margin"
+        >
+          Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.
+        </h3>
+        <h3
+          class="no-margin"
+        >
+          The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow).
+        </h3>
+        <h3
+          class="no-margin"
+        >
+          At this time, there are no specific vaccines or treatments for COVID-19.
+        </h3>
+        <h3
+          class="no-margin"
+        >
+          However, there are many ongoing clinical trials evaluating potential treatments. WHO will continue to provide updated information as soon as clinical findings become available.
+        </h3>
+        <h3
+          class="no-margin"
+        >
+          The World Health Organization (WHO) is the authority on the COVID-19 pandemic.
+        </h3>
+        <h3
+          class="no-margin"
+        >
+          Read more about the COVID-19 pandemic at
+          <a
+            href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019"
+          >
+            https://www.who.int/emergencies/diseases/novel-coronavirus-2019
+          </a>
+        </h3>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
